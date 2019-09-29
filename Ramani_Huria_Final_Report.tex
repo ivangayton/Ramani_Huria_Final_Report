@@ -218,6 +218,7 @@ Besides base data, other major digital assets that were collected in the Ramani 
 OpenStreetMap is a global map! There is no particular boundary or extent to this data. However, the team’s efforts are focused on greater Dar es Salaam, with a particular focus on the 46 prioritized Ramani Huria wards (just under 50 percent of the wards in the city).
 \end{multicols}
 
+\newpage
 \subsection{Data Collection Methodology}
 
 \begin{multicols}{2}
@@ -239,11 +240,12 @@ The Ramani Huria motto has been, ”Local People, Local Devices, Open Knowledge.
 
 The table below shows the number of students from Ardhi University and the University of Dar es Salaam that have been trained during the Ramani Huria industrial trainings from 2017-2019: a total of 853 students were trained, with 391 of females, and 462 of males.
 \end{multicols}
+
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline 
-{\bfseries Year} & \multicolumn{2}{|c|}{\bfseries Ardhi University} & \multicolumn{2}{|c|}{\bfseries University of Dar es Salaam} & {\bfseries Total}\\
-  \hline
+\multirow{\bfseries Year} & \multicolumn{2}{|c|}{\bfseries Ardhi University} & \multicolumn{2}{|c|}{\bfseries University of Dar es Salaam} & \multirow{\bfseries Total}\\
+\cline{2-5} %allows an \hline in only the selected number of columns
   {} & \bfseries Male & \bfseries Female & \bfseries Male & \bfseries Female & {}\\
   \hline
   2017 & 162 & 144 & 0 & 0 & \bfseries 306\\
@@ -257,6 +259,7 @@ The table below shows the number of students from Ardhi University and the Unive
  \end{tabular}
 \end{center}
 % \multicolumn{2}{|c|} this package allows you to merge cells in a row from a column
+%\multirow this package allows you to merge cells in a column from a row
 
 \begin{multicols}{2}
 The training we provided to project mappers was based on practical work rather than theoretical pedagogy. Participating in a project with genuine, rigorous deliverables best prepared our work team to deliver, whilst providing valuable skills for future careers. This approach does imply trade-offs, i.e. less transfer of theoretical knowledge and more specialization than in classroom-based programs. After training, students performed in field and community data collection supervision, and remote mapping (digitization). This work provided students with the “muscle memory” of consistent working habits, and valuable experience to take forward into their careers.
@@ -264,10 +267,12 @@ The training we provided to project mappers was based on practical work rather t
 Ramani Huria partnered with local people in their own communities, especially in data collection. Our greatest and most important partnership is with the people of Dar es Salaam; we work together with them to improve their resilience, autonomy, ownership of their own community and data, environment, and dignity. The Ramani Huria team compiled a database that contains contacts of local leaders in almost all wards that we worked in. The database helps to maintain communication between our team and community leaders in preparation for any fieldwork or meetings and/or if there is a need for an immediate response. The community leaders’ contact database acts as the main tool to get information from the community before sending the team to the field.
 \end{multicols}
 
+\newpage
 \section{Activities Overview}
 \begin{multicols}{2}
 To create data that is fit for purpose, the following activities were performed throughout the course of the project and are linked to specific datasets. What follows is a summary with key statistics, for a detailed overview including spatial extent, data collection methodology, human resources used,, timeline, access, quality assurance, in addition to use cases and data gaps, please refer to the Technical Overview of Digital Assets (Ramani Huria Interim Report 4). 
 \end{multicols}
+
 \subsection{Ramani Huria Base Data}
 \begin{multicols}{2}
 Ramani Huria teams collect and create a wide range of base-map data, which primarily go to the OpenStreetMap platform. This is the underlying map layer upon which specific datasets important to resilience are overlaid—the equivalent of common web based maps such as Google Maps, but freely available open data backed by a global community and extensive quality assurance. This includes roads, buildings, health care facilities, schools and universities, transportation infrastructure such as bus stops and Rapid Transit lines, businesses such as restaurants, shops, salons and hotels, public offices, recreation facilities, natural features such as rivers and wetlands, parks, etc. 
@@ -338,6 +343,12 @@ Re-digitization of the city was conducted to update and improve the quality of a
 Aligning buildings with a higher resolution image of 10cm provided by COWI company using Mbtiles created in GDAL (gdaladdo)---a utility used to build or rebuild overview images. Using the 2016 COWI imagery in combination with the HOT Tasking Manager, buildings were re-digitized in JOSM and validation of the re-digitization was done by the validation team.
 \end{multicols}
 
+\begin{figure}[h]
+    \centering
+    \includegraphics{0}
+    \caption{The following table indicates the analytics of the buildings and roads mapped by the team during the Ramani Huria project timeline (2017/2019)}
+    \label{fig:my_label}
+\end{figure}
 % \multicolumn{2}{|c|} this package allows you to merge cells in a row from a column
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
@@ -360,12 +371,6 @@ Aligning buildings with a higher resolution image of 10cm provided by COWI compa
 \hline
 \end{tabular}
 \end{center}
-\begin{figure}[h]
-    \centering
-    \includegraphics{0}
-    \caption{The following table indicates the analytics of the buildings and roads mapped by the team during the Ramani Huria project timeline (2017/2019)}
-    \label{fig:my_label}
-\end{figure}
 
 %\begin{figure}[h]
 %    \centering
@@ -416,7 +421,7 @@ A national-level soil profile had existed for Tanzania prior to this effort but 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=.75\textwidth]{images/erosion_Sep26_min.png}
+    \includegraphics[width=.7\textwidth]{images/erosion_Sep26_min.png}
     %\caption{Caption}
     \label{fig:my_label}
 \end{figure}
@@ -547,7 +552,7 @@ Due to dedicated communications and outreach efforts, we have been contacted by 
     \item \href{https://www.youtube.com/playlist?list=PLb9506_-6FMEcMtUtvJV1bKOrW89HNFMd}{HOT Tanzania Playlist}\footnote{\url{https://www.youtube.com/playlist?list=PLb9506_-6FMEcMtUtvJV1bKOrW89HNFMd}}
 - A playlist of ten videos showcasing Ramani Huria and different activities in Dar es Salaam
     \item \href{https://www.youtube.com/watch?v=7Pa0wgMstE8}{Ramani Huria - Community Mapping in Dar es Salaam} \footnote{\url{https://www.youtube.com/watch?v=7Pa0wgMstE8}} - Tanzanians are mapping their own city in order to solve flooding using better urban planning, better drainage and maintenance and better community waste management.
-    \item \href{https://www.worldbank.org/en/news/video/2019/05/15/in-tanzania-citizen-scientists-help-reduce-flood-risk-with-soil-sampling}{In Tanzania, Citizen Scientists Help Reduce Flood Risk with Soil Sampling}\footnote{\url{https://www.worldbank.org/en/news/video/2019/05/15/in-tanzania-citizen-scientists-help-reduce-flood-risk-with-soil-sampling}}
+    \item \href{https://www.worldbank.org/en/news/video/2019/05/15/in-tanzania-citizen-scientists-help-reduce-flood-risk-with-soil-sampling}{In Tanzania, Citizen Scientists Help Reduce Flood Risk with Soil Sampling}
 - The Tanzania Urban Resilience Program harnessed local tools and knowledge to create a comprehensive soil map that will inform flood mitigation measures and urban planning for the city of Dar es Salaam
     \item \href{https://www.youtube.com/watch?v=6-hKycm9oOY}{How Tanzanians are Mapping their own City to Solve Flooding}\footnote{\url{https://www.youtube.com/watch?v=6-hKycm9oOY}}
 - As a community-based mapping project in Dar es Salaam training university students and local community members to create highly accurate maps of the most flood-prone areas in the city, Ramani Huria is helping Tanzanians to map their own city in order to solve the problem of flooding using better urban planning, drainage and maintenance, and community waste management.
@@ -566,15 +571,15 @@ How can technology contribute to clean Dar es Salaam? Azam Tv which is one of th
 \subsubsection {Blogs/Articles}
 
 \begin{itemize}
-    \item \href{https://www.thecitizen.co.tz/magazine/success/-Local-graduate-using-drones-for-mapping/1843788-4967500-c6pj0rz/index.html}{Local Graduate Using Drones for Mapping}\footnote{\url{https://www.thecitizen.co.tz/magazine/success/-Local-graduate-using-drones-for-mapping/1843788-4967500-c6pj0rz/index.html}}
+    \item \href{https://www.thecitizen.co.tz/magazine/success/-Local-graduate-using-drones-for-mapping/1843788-4967500-c6pj0rz/index.html}{Local Graduate Using Drones for Mapping}
 - How a local graduate (Bornlove Ntikha) built a drone from scratch after joining the Ramani Huria team as a student mapper.
-    \item \href{https://www.ippmedia.com/en/features/hot-tackles-dar-es-salaamE28099s-waste-problem-one-dataset-time}{Tackling Dar es Salaam’s Waste Problem - One Dataset at a Time} \footnote{\url{https://www.ippmedia.com/en/features/hot-tackles-dar-es-salaamE28099s-waste-problem-one-dataset-time}}
+    \item \href{https://www.ippmedia.com/en/features/hot-tackles-dar-es-salaamE28099s-waste-problem-one-dataset-time}{Tackling Dar es Salaam’s Waste Problem - One Dataset at a Time} 
 - Through the project, we have worked with trash collection companies to better understand their challenges and found a better way to track their clients by location, know their number and create a better system of revenue collection.
-    \item \href{https://spectrum.ieee.org/robotics/drones/tanzanias-homegrown-drone-industry-takes-off-on-bamboo-wings}{ Tanzania Builds a Drone Industry From Local Know-How and Bamboo}\footnote{\url{https://spectrum.ieee.org/robotics/drones/tanzanias-homegrown-drone-industry-takes-off-on-bamboo-wings}}
+    \item \href{https://spectrum.ieee.org/robotics/drones/tanzanias-homegrown-drone-industry-takes-off-on-bamboo-wings}{ Tanzania Builds a Drone Industry From Local Know-How and Bamboo}
 - Bamboo drones are just one way that local companies hope to meet Tanzania’s needs. Bornlove Ntikha uses bamboo for the frame of his DIY drone. Ntikha wants to show that drones can be built out of locally available materials, which will make them cheaper and more accessible.
 \end{itemize}
 
-More Blogs about the project are found on \href{http://ramanihuria.org/news/}{Ramani Huria Website}\footnote{\url{http://ramanihuria.org/news/}}. The blogs include both technical parts of the project and data use.
+More Blogs about the project are found on \href{http://ramanihuria.org/news/}{Ramani Huria Website}
 
 \newpage
 \section{Conclusion: From Local to Global Solutions}
@@ -592,8 +597,9 @@ The best of the Ramani Huria participants don't just do as they are told, they s
 
 They pass their knowledge to their peers unstintingly, secure in their competence and unafraid of competition. They welcome, rather than fear, more people being able to do what they can---they are aware of the tremendous amount of work that remains to be done for resilient cities. 
 
+\begin{mdframed}[hidealllines=true,backgroundcolor=RHgreen!10,innerleftmargin=6pt,innerrightmargin=6pt,leftmargin=-3pt,rightmargin=-3pt]
 Several Ramani Huria alumni are already engaged in supporting projects across Africa and beyond. More will fly like seeds from a great flowering tree, creating new teams and projects across Tanzania and beyond. The fundamental power of local people, local devices, and open knowledge has revolutionized urban resilience data in Dar es Salaam. The world is watching, and the work is only beginning across the globe.
-
+\end{mdframed}
 
 \end{multicols}
 
